@@ -144,12 +144,14 @@ footer {
 .social-icon {
     display: flex;
     align-items: center;
+    margin-bottom: 20px; /* Agregar margen inferior para separación vertical */
 }
 
 .social-icon img {
     width: 30px;
     filter: invert(0); /* Cambiado a invert(0) para dar el tono café */
 }
+
 
 .images {
     display: flex;
