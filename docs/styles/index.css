@@ -1,181 +1,80 @@
 body {
-    margin: 0;
-    background-color: #fee4e4;
+     margin: 0;
+    background-color: white;
+    font-size: 16px; /* Ajusta el tamaño de fuente base */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background-color: #be8368;
     width: 100%;
-    height: 400px;
+    height: 100px; /* Ajusta la altura */
+    display: flex;
+    justify-content: flex-start; /* Alinea el logotipo a la izquierda del header */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
 header a {
     text-decoration: none;
     color: white;
     font-weight: 600;
-    font-size: 4em;
-    display: inline-table;
-    width: 500px;
-    text-align-last: center;
+    font-size: 2.5em; /* Ajusta el tamaño de fuente y lo hace más grande */
+    text-align: center; /* Ajusta el alineamiento al centro */
+    flex-grow: 1; /* Expande para llenar el espacio disponible */
 }
 
 nav {
-    height: 400px;
-    padding-left: 100px;
+    height: 100px; /* Ajusta la altura */
+    padding: 0 10px; /* Ajusta el relleno izquierdo y derecho */
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between; /* Distribuye los elementos a los extremos del navbar */
     align-items: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
 }
 
 ul {
     list-style: none;
-    width: 40%;
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos de la lista */
+}
+
+ul li {
+    font-size: 0.4em; /* Ajusta el tamaño de fuente de los elementos de la lista */
+    margin-right: 10px; /* Agrega un espacio entre los elementos de la lista */
+    color: white; /* Establece el color del texto a blanco */
 }
 
 nav img {
-    width: 20%;
+    width: 80px; /* Ajusta el ancho del logo para hacerlo más grande y centrado */
 }
 
+.logo {
+    width: 80px; /* Ajusta el ancho del logo para hacerlo más grande y centrado */
+    margin-right: 325px;
+}
 
 .icons-container {
-    width: 40%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    align-items: center;
 }
 
 .icons-container img {
-    width: 5%;
-}
-
-.banner {
-    width: 100%;
-    height: 1500px;
-    margin-top: 300px;
-    background-image: url("../images/Jewelry.jpg");
-    background-position-y: 65%;
-    background-size: cover;
-}
-
-.section-1 {
-    margin: 150px;
-    height: 2000px;
-}
-
-.section-1 h1 {
-    text-align-last: center;
-    font-size: 4em;
-    color: #be8368;
-}
-
-.section-1-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.section-1-container h1 {
-    color: white;
-}
-
-.section-1-container div {
-    width: 25%;
-    height: 1500px;
-    margin: 150px;
-    background-position-y: 65%;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.section-1-column-1 {
-    background-image: url("../images/Anillos.jpg");
-}
-
-.section-1-column-2 {
-    background-image: url("../images/Collares.jpg");
-}
-
-.section-1-column-3 {
-    background-image: url("../images/Aretes.jpg");
-}
-
-.section-1-column-4 {
-    background-image: url("../images/Brazaletes.jpg");
-}
-
-.section-2 {
-    margin-top: 150px;
-    height: 2000px;
-    background-color: #f0c7b7;
-    display: flex;
-    flex-direction: row;
-}
-
-.section-2-left {
-    padding: 150px;
-    padding-top: 500px;
-    width: 30%;
-}
-
-.section-2-left h1 {
-    font-size: 6em;
-    color: #be8368;
-}
-
-.section-2-left p {
-    font-size: 5em;
-    color: #be8368;
-}
-
-.section-2-left button {
-    font-size: 5em;
-    background-color: #be8368;
-    color: white;
-    border: none;
-    padding: 0.5em;
-}
-
-.section-2-pictures {
-    width: 100%;
-    padding: 150px;
-    height: 1700px;
-    background-position-y: 65%;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 0;
-}
-
-.section-2-picture-1 {
-    background-image: url("../images/Joyeria1.jpg");
-    width: 33.33%;
-    height: 1700px;
-    margin-right: 100px;
-}
-
-.section-2-picture-2 {
-    background-image: url("../images/Joyeria2.jpg");
-    width: 30%;
-    height: 1700px;
-    margin-right: 100px;
-}
-
-.section-2-picture-3 {
-    background-image: url("../images/Joyeria3.jpg");
-    width: 30%;
-    height: 1700px;
+    width: 30px; /* Ajusta el ancho de los íconos */
+    filter: invert(1); /* Hace que los íconos sean blancos */
 }
 
 footer {
-    height: 500px;
-    margin-top: 300px;
+    margin-top: auto;
+    height: 100px; /* Ajusta la altura */
+    /* Ajusta el margen superior */
     background-color: #be8368;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    padding: 0 20px; /* Ajusta el relleno izquierdo y derecho del footer */
 }
 
 .footer-left {
@@ -183,25 +82,98 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 300px;
+    height: 60px; /* Ajusta la altura */
 }
 
 .footer-left h1 {
-    font-size: 3.5em;
+    font-size: 1em; /* Ajusta el tamaño de fuente del encabezado del footer */
     font-weight: 500;
     width: 80%;
     color: white;
     text-align: center;
 }
 
+/* Agrega espacio entre los íconos del footer y muévelos más a la izquierda */
+.footer-right a {
+    margin-right: 10px; /* Agrega espacio entre los íconos */
+}
+
+/* Quita el margen derecho para el último ícono en el footer */
+.footer-right a:last-child {
+    margin-right: 0;
+}
+
+.footer-line {
+    width: 2px; /* Ancho de la línea vertical */
+    height: 100px; /* Ajusta la altura de la línea vertical */
+    background-color: white; /* Color blanco */
+    margin: 0 10px; /* Agrega espacio entre la línea y los íconos */
+   
+}
+
 .footer-right {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
-    width: 15%;
 }
 
 .footer-right img {
-    width: 80%;
+    width: 50px; /* Ajusta el ancho de las imágenes */
+    filter: invert(1); /* Hace que las imágenes del footer sean blancas */
+}
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    header {
+        height: auto; /* Altura automática para acomodar elementos */
+        padding: 10px; /* Agrega relleno al encabezado */
+    }
+    
+    header a {
+        font-size: 1.5em; /* Reduce el tamaño de fuente de los enlaces en el encabezado */
+    }
+    
+    nav {
+        flex-direction: column; /* Cambia la dirección de flexión para el menú */
+        align-items: flex-start; /* Alinea elementos al inicio */
+        overflow: hidden; /* Oculta elementos que desbordan el menú */
+        max-height: 0; /* Altura máxima inicial 0 para colapsar el menú */
+        transition: max-height 0.3s ease; /* Agrega una transición suave */
+    }
+    
+    ul {
+        flex-direction: column; /* Alinea los elementos verticalmente */
+    }
+    
+    ul li {
+        margin-right: 0; /* Elimina el margen entre elementos del menú */
+        margin-bottom: 10px; /* Agrega espacio entre elementos del menú */
+    }
+    
+    .logo {
+        margin-right: 0; /* Elimina el margen derecho del logo */
+    }
+    
+    .icons-container {
+        justify-content: center; /* Centra los íconos horizontalmente */
+        margin-top: 20px; /* Agrega espacio entre los íconos y el menú */
+    }
+    
+    footer {
+        flex-direction: column; /* Alinea elementos del footer verticalmente */
+    }
+    
+    .footer-line {
+        width: 100%; /* Línea horizontal que ocupa todo el ancho */
+        height: 2px; /* Ajusta la altura de la línea horizontal */
+        margin: 10px 0; /* Agrega espacio arriba y abajo de la línea */
+    }
+    
+    .footer-right {
+        flex-direction: row; /* Alinea los íconos horizontalmente */
+        justify-content: center; /* Centra los íconos horizontalmente */
+    }
+    
+    .footer-right img {
+        width: 30px; /* Reduce el tamaño de las imágenes de los íconos */
+    }
 }
