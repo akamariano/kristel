@@ -124,56 +124,62 @@ footer {
 /* Estilos para dispositivos móviles */
 @media screen and (max-width: 600px) {
     header {
-        height: auto; /* Altura automática para acomodar elementos */
-        padding: 10px; /* Agrega relleno al encabezado */
+        height: auto;
+        padding: 10px;
     }
-    
+
     header a {
-        font-size: 1.5em; /* Reduce el tamaño de fuente de los enlaces en el encabezado */
+        font-size: 1.5em;
     }
-    
+
     nav {
-        flex-direction: column; /* Cambia la dirección de flexión para el menú */
-        align-items: flex-start; /* Alinea elementos al inicio */
-        overflow: hidden; /* Oculta elementos que desbordan el menú */
-        max-height: 0; /* Altura máxima inicial 0 para colapsar el menú */
-        transition: max-height 0.3s ease; /* Agrega una transición suave */
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
     }
-    
+
     ul {
-        flex-direction: column; /* Alinea los elementos verticalmente */
+        flex-direction: column;
     }
-    
+
     ul li {
-        margin-right: 0; /* Elimina el margen entre elementos del menú */
-        margin-bottom: 10px; /* Agrega espacio entre elementos del menú */
+        margin-right: 0;
+        margin-bottom: 10px;
     }
-    
+
     .logo {
-        margin-right: 0; /* Elimina el margen derecho del logo */
+        margin-right: 0;
     }
-    
+
     .icons-container {
-        justify-content: center; /* Centra los íconos horizontalmente */
-        margin-top: 20px; /* Agrega espacio entre los íconos y el menú */
+        justify-content: center;
+        margin-top: 10px;
     }
-    
+
     footer {
-        flex-direction: column; /* Alinea elementos del footer verticalmente */
+        flex-direction: column;
+        align-items: center;
     }
-    
+
     .footer-line {
-        width: 100%; /* Línea horizontal que ocupa todo el ancho */
-        height: 2px; /* Ajusta la altura de la línea horizontal */
-        margin: 10px 0; /* Agrega espacio arriba y abajo de la línea */
+        width: 100%;
+        height: 2px;
+        margin: 10px 0;
     }
-    
+
+    .footer-left h1 {
+        font-size: 0.8em;
+    }
+
     .footer-right {
-        flex-direction: row; /* Alinea los íconos horizontalmente */
-        justify-content: center; /* Centra los íconos horizontalmente */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     .footer-right img {
-        width: 30px; /* Reduce el tamaño de las imágenes de los íconos */
+        width: 30px;
     }
 }
