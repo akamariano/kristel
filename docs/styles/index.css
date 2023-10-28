@@ -126,6 +126,7 @@ footer {
     header {
         height: auto;
         padding: 10px;
+        justify-content: center; /* Centra el contenido en el encabezado */
     }
 
     header a {
@@ -140,6 +141,10 @@ footer {
         transition: max-height 0.3s ease;
     }
 
+    nav.open {
+        max-height: 1000px; /* Muestra el menú al hacer clic en el botón de hamburguesa */
+    }
+
     ul {
         flex-direction: column;
     }
@@ -150,11 +155,11 @@ footer {
     }
 
     .logo {
-        margin-right: 0;
+        margin: 0 auto; /* Centra el logo horizontalmente */
     }
 
     .icons-container {
-        justify-content: center;
+        justify-content: flex-end; /* Mueve los íconos a la derecha */
         margin-top: 10px;
     }
 
