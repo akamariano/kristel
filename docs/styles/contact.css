@@ -121,70 +121,45 @@ footer {
    width: 50px; /* Ajusta el ancho de las imágenes */
    filter: invert(1); /* Hace que las imágenes del footer sean blancas */
 }
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 600px) {
-   header {
-       height: auto;
-       padding: 10px;
-       justify-content: center; /* Centra el contenido en el encabezado */
-   }
+.social-icon img {
+    width: 30px;
+    filter: invert(0); /* Cambiado a invert(0) para dar el tono café */
+}
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 100px; /* Añadir relleno para crear espacio entre el navbar y la sección de contacto */
+}
 
-   header a {
-       font-size: 1.5em;
-   }
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear elementos de redes sociales a la izquierda */
+    color: #be8368; /* Cambiar el color del texto a café */
+}
 
-   nav {
-       flex-direction: column;
-       align-items: flex-start;
-       overflow: hidden;
-       max-height: 0;
-       transition: max-height 0.3s ease;
-   }
+.social-icon {
+    display: flex;
+    align-items: center;
+}
 
-   nav.open {
-       max-height: 1000px; /* Muestra el menú al hacer clic en el botón de hamburguesa */
-   }
+.social-icon img {
+    width: 30px;
+    filter: invert(0); /* Cambiado a invert(0) para dar el tono café */
+}
 
-   ul {
-       flex-direction: column;
-   }
+.images {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinear las imágenes al centro */
+    margin-left: 50px; /* Añadir margen izquierdo para centrar las imágenes */
+}
 
-   ul li {
-       margin-right: 0;
-       margin-bottom: 10px;
-   }
-
-   .logo {
-       margin: 0 auto; /* Centra el logo horizontalmente */
-   }
-
-   .icons-container {
-       justify-content: flex-end; /* Mueve los íconos a la derecha */
-       margin-top: 10px;
-   }
-
-   footer {
-       flex-direction: column;
-       align-items: center;
-   }
-
-   .footer-line {
-       width: 100%;
-       height: 2px;
-       margin: 10px 0;
-   }
-
-   .footer-left h1 {
-       font-size: 0.8em;
-   }
-
-   .footer-right {
-       flex-direction: column;
-       justify-content: center;
-       align-items: center;
-   }
-
-   .footer-right img {
-       width: 30px;
-   }
+.image {
+    width: 150px; /* Ajusta el ancho de las imágenes (ajusta el valor según lo necesites) */
+    height: auto; /* Mantén la proporción de aspecto original */
+    margin-right: 20px; /* Agrega espacio entre las imágenes */
 }
