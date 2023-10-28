@@ -3,11 +3,18 @@
     header {
         height: auto;
         padding: 10px;
-        justify-content: center; /* Centra el contenido en el encabezado */
+        justify-content: space-between;
     }
 
     header a {
         font-size: 1.5em;
+    }
+
+    /* Agregar un botón de hamburguesa para abrir el menú */
+    .menu-icon {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
     }
 
     nav {
@@ -19,7 +26,7 @@
     }
 
     nav.open {
-        max-height: 1000px; /* Muestra el menú al hacer clic en el botón de hamburguesa */
+        max-height: 1000px;
     }
 
     ul {
@@ -32,12 +39,17 @@
     }
 
     .logo {
-        margin: 0 auto; /* Centra el logo horizontalmente */
+        margin: 0 auto;
     }
 
     .icons-container {
-        justify-content: flex-end; /* Mueve los íconos a la derecha */
+        justify-content: flex-end;
         margin-top: 10px;
+    }
+
+    .social-icon img {
+        width: 30px;
+        filter: invert(0); /* Íconos de redes sociales en tono café */
     }
 
     footer {
@@ -52,7 +64,7 @@
     }
 
     .footer-left h1 {
-        font-size: 0.8em;
+        font-size: 0.8em; /* Reducir el tamaño de fuente del footer */
     }
 
     .footer-right {
@@ -62,7 +74,7 @@
     }
 
     .footer-right img {
-        width: 30px;
+        width: 30px; /* Ajustar el ancho de las imágenes del footer */
     }
 }
 body {

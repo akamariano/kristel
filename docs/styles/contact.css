@@ -1,167 +1,242 @@
+@media screen and (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    header a {
+        font-size: 1.5em;
+    }
+
+    /* Agregar un botón de hamburguesa para abrir el menú */
+    .menu-icon {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+    }
+
+    nav.open {
+        max-height: 1000px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .icons-container {
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+
+    .social-icon img {
+        width: 30px;
+        filter: invert(0); /* Íconos de redes sociales en tono café */
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-line {
+        width: 100%;
+        height: 2px;
+        margin: 10px 0;
+    }
+
+    .footer-left h1 {
+        font-size: 0.8em; /* Reducir el tamaño de fuente del footer */
+    }
+
+    .footer-right {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-right img {
+        width: 30px; /* Ajustar el ancho de las imágenes del footer */
+    }
+}
+
 body {
     margin: 0;
-   background-color: white;
-   font-size: 16px; /* Ajusta el tamaño de fuente base */
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh;
+    background-color: white;
+    font-size: 16px; /* Ajusta el tamaño de fuente base */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-   background-color: #be8368;
-   width: 100%;
-   height: 100px; /* Ajusta la altura */
-   display: flex;
-   justify-content: flex-start; /* Alinea el logotipo a la izquierda del header */
-   align-items: center; /* Centra verticalmente el contenido */
+    background-color: #be8368;
+    width: 100%;
+    height: 100px; /* Ajusta la altura */
+    display: flex;
+    justify-content: flex-start; /* Alinea el logotipo a la izquierda del header */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
 header a {
-   text-decoration: none;
-   color: white;
-   font-weight: 600;
-   font-size: 2.5em; /* Ajusta el tamaño de fuente y lo hace más grande */
-   text-align: center; /* Ajusta el alineamiento al centro */
-   flex-grow: 1; /* Expande para llenar el espacio disponible */
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 2.5em; /* Ajusta el tamaño de fuente y lo hace más grande */
+    text-align: center; /* Ajusta el alineamiento al centro */
+    flex-grow: 1; /* Expande para llenar el espacio disponible */
 }
 
 nav {
-   height: 100px; /* Ajusta la altura */
-   padding: 0 10px; /* Ajusta el relleno izquierdo y derecho */
-   display: flex;
-   justify-content: space-between; /* Distribuye los elementos a los extremos del navbar */
-   align-items: center;
-   width: 100%; /* Ocupa todo el ancho disponible */
+    height: 100px; /* Ajusta la altura */
+    padding: 0 10px; /* Ajusta el relleno izquierdo y derecho */
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos del navbar */
+    align-items: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
 }
 
 ul {
-   list-style: none;
-   margin: 0; /* Elimina el margen predeterminado */
-   padding: 0; /* Elimina el relleno predeterminado */
-   display: flex;
-   align-items: center; /* Alinea verticalmente los elementos de la lista */
+    list-style: none;
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos de la lista */
 }
 
 ul li {
-   font-size: 0.4em; /* Ajusta el tamaño de fuente de los elementos de la lista */
-   margin-right: 10px; /* Agrega un espacio entre los elementos de la lista */
-   color: white; /* Establece el color del texto a blanco */
+    font-size: 0.4em; /* Ajusta el tamaño de fuente de los elementos de la lista */
+    margin-right: 10px; /* Agrega un espacio entre los elementos de la lista */
+    color: white; /* Establece el color del texto a blanco */
 }
 
 nav img {
-   width: 80px; /* Ajusta el ancho del logo para hacerlo más grande y centrado */
+    width: 80px; /* Ajusta el ancho del logo para hacerlo más grande y centrado */
 }
 
 .logo {
-   width: 80px; /* Ajusta el ancho del logo para hacerlo más grande y centrado */
-   margin-right: 325px;
+    width: 80px; /* Ajusta el ancho del logo para hacerlo más grande y centrado */
+    margin-right: 325px;
 }
 
 .icons-container {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .icons-container img {
-   width: 30px; /* Ajusta el ancho de los íconos */
-   filter: invert(1); /* Hace que los íconos sean blancos */
+    width: 30px; /* Ajusta el ancho de los íconos */
+    filter: invert(1); /* Hace que los íconos sean blancos */
 }
 
 footer {
-   margin-top: auto;
-   height: 100px; /* Ajusta la altura */
-   /* Ajusta el margen superior */
-   background-color: #be8368;
-   display: flex;
-   align-items: center;
-   padding: 0 20px; /* Ajusta el relleno izquierdo y derecho del footer */
+    margin-top: auto;
+    height: 100px; /* Ajusta la altura */
+    /* Ajusta el margen superior */
+    background-color: #be8368;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Ajusta el relleno izquierdo y derecho del footer */
 }
 
 .footer-left {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   height: 60px; /* Ajusta la altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px; /* Ajusta la altura */
 }
 
 .footer-left h1 {
-   font-size: 1em; /* Ajusta el tamaño de fuente del encabezado del footer */
-   font-weight: 500;
-   width: 80%;
-   color: white;
-   text-align: center;
+    font-size: 1em; /* Ajusta el tamaño de fuente del encabezado del footer */
+    font-weight: 500;
+    width: 80%;
+    color: white;
+    text-align: center;
 }
 
 /* Agrega espacio entre los íconos del footer y muévelos más a la izquierda */
 .footer-right a {
-   margin-right: 10px; /* Agrega espacio entre los íconos */
+    margin-right: 10px; /* Agrega espacio entre los íconos */
 }
 
 /* Quita el margen derecho para el último ícono en el footer */
 .footer-right a:last-child {
-   margin-right: 0;
+    margin-right: 0;
 }
 
 .footer-line {
-   width: 2px; /* Ancho de la línea vertical */
-   height: 100px; /* Ajusta la altura de la línea vertical */
-   background-color: white; /* Color blanco */
-   margin: 0 10px; /* Agrega espacio entre la línea y los íconos */
+    width: 2px; /* Ancho de la línea vertical */
+    height: 100px; /* Ajusta la altura de la línea vertical */
+    background-color: white; /* Color blanco */
+    margin: 0 10px; /* Agrega espacio entre la línea y los íconos */
   
 }
 
 .footer-right {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .footer-right img {
-   width: 50px; /* Ajusta el ancho de las imágenes */
-   filter: invert(1); /* Hace que las imágenes del footer sean blancas */
+    width: 50px; /* Ajusta el ancho de las imágenes */
+    filter: invert(1); /* Hace que las imágenes del footer sean blancas */
 }
-.social-icon img {
-    width: 30px;
-    filter: invert(0); /* Cambiado a invert(0) para dar el tono café */
-}
+
 .contact-section {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: row; /* Cambia la dirección de los elementos a fila (horizontal) */
+    align-items: center; /* Alinea los elementos al centro */
     justify-content: space-between;
-    
     padding: 100px; /* Añadir relleno para crear espacio entre el navbar y la sección de contacto */
 }
 
-.social-media {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinear elementos de redes sociales a la izquierda */
-    color: #be8368; /* Cambiar el color del texto a café */
-}
-
-.social-icon {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; /* Agregar margen inferior para separación vertical */
-}
-
-.social-icon img {
-    width: 30px;
-    filter: invert(0); /* Cambiado a invert(0) para dar el tono café */
-}
-
-
 .images {
     display: flex;
-    flex-direction: row;
-    align-items: center; /* Alinear las imágenes al centro */
-    margin-left: 50px; /* Añadir margen izquierdo para centrar las imágenes */
+    flex-direction: row; /* Cambia la dirección de las imágenes a fila (horizontal) */
+    align-items: center; /* Alinea las imágenes al centro */
+    margin: 20px 0; /* Agregar margen superior e inferior para separación */
 }
 
 .image {
     width: 150px; /* Ajusta el ancho de las imágenes (ajusta el valor según lo necesites) */
     height: auto; /* Mantén la proporción de aspecto original */
     margin-right: 20px; /* Agrega espacio entre las imágenes */
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de las redes sociales a fila (horizontal) */
+    align-items: center; /* Alinea las redes sociales al centro */
+    margin-top: 20px; /* Agregar margen superior para separación */
+    color: #be8368; /* Cambiar el color del texto a café */
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Agregar margen entre los íconos de redes sociales */
+}
+
+.social-icon img {
+    width: 30px;
+    filter: invert(0); /* Cambiado a invert(0) para dar el tono café */
 }
