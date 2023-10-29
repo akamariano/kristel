@@ -65,7 +65,7 @@
     }
 
     .footer-left h1 {
-        font-size: 0.3em; /* Reducir el tamaño de fuente del footer */
+        font-size: 0.1em; /* Reducir el tamaño de fuente del footer */
     }
 
     .footer-right {
@@ -75,7 +75,7 @@
     }
 
     .footer-right img {
-        width: 30px; /* Ajustar el ancho de las imágenes del footer */
+        width: 20px; /* Ajustar el ancho de las imágenes del footer */
     }
 }
 body {
