@@ -64,7 +64,7 @@
     }
 
     .footer-left h1 {
-        font-size: 0.8em; /* Reducir el tamaño de fuente del footer */
+        font-size: 0.3em; /* Reducir el tamaño de fuente del footer */
     }
 
     .footer-right {
@@ -199,4 +199,7 @@ footer {
 .footer-right img {
     width: 50px; /* Ajusta el ancho de las imágenes */
     filter: invert(1); /* Hace que las imágenes del footer sean blancas */
+}
+.section{
+    margin-top: auto;
 }

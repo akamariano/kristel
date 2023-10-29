@@ -217,8 +217,9 @@ footer {
 }
 
 .image {
+    height: 225px;
     width: 150px; /* Ajusta el ancho de las imágenes (ajusta el valor según lo necesites) */
-    height: auto; /* Mantén la proporción de aspecto original */
+     /* Mantén la proporción de aspecto original */
     margin-right: 20px; /* Agrega espacio entre las imágenes */
 }
 
@@ -233,7 +234,7 @@ footer {
 .social-icon {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Agregar margen entre los íconos de redes sociales */
+    margin-top: 40px; /* Agregar margen entre los íconos de redes sociales */
 }
 
 .social-icon img {
