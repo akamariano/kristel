@@ -1,4 +1,4 @@
-/* Estilos para dispositivos móviles */
+
 @media screen and (max-width: 600px) {
     header {
         height: auto;
@@ -55,17 +55,17 @@
     footer {
         flex-direction: column;
         align-items: center;
-        height: 200px;
+        height: 1000px;
     }
 
     .footer-line {
         width: 100%;
-        height: 2px;
+        height: 200px;
         margin: 10px 0;
     }
 
     .footer-left h1 {
-        font-size: 0.1em; /* Reducir el tamaño de fuente del footer */
+        font-size: 20px; /* Reducir el tamaño de fuente del footer */
     }
 
     .footer-right {
