@@ -71,6 +71,7 @@ header a {
 .contact-section .fab {
     font-size: 50px; /* Aumentar el tamaño de los íconos */
     color: #be8368; /* Cambiar el color a blanco */
+    margin-top: auto;
 }
 .contact-section {
     display: flex;
@@ -84,7 +85,8 @@ header a {
     display: flex;
     flex-direction: row; /* Cambia la dirección de las imágenes a fila (horizontal) */
     align-items: center; /* Alinea las imágenes al centro */
-    margin: 20px 0; /* Agregar margen superior e inferior para separación */
+    margin: 55px 0; /* Agregar margen superior e inferior para separación */
+    
 }
 
 .image {
