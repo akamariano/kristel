@@ -43,7 +43,7 @@ header a {
 .nav-link {
     font-family: 'Inria Serif', serif;  /* Cambia "Arial, sans-serif" al tipo de letra que desees */
     font-size: 16px; /* Tamaño de fuente */
-    font-weight: 600; /* Peso de fuente (opcional) */
+    font-weight: 800; /* Peso de fuente (opcional) */
 }
 .footer {
     background-color: #be8368;
