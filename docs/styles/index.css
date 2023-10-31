@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Inria Serif', serif; 
 }
 
 header {
@@ -40,9 +41,9 @@ header a {
             text-align: center;
         }
 .nav-link {
-    font-family: Arial, sans-serif; /* Cambia "Arial, sans-serif" al tipo de letra que desees */
+    font-family: 'Inria Serif', serif; /* Cambia "Arial, sans-serif" al tipo de letra que desees */
     font-size: 16px; /* Tamaño de fuente */
-    font-weight: 600; /* Peso de fuente (opcional) */
+    font-weight: 800; /* Peso de fuente (opcional) */
 }
 .footer {
     background-color: #be8368;
@@ -53,6 +54,7 @@ header a {
     justify-content: space-between; /* Separa el texto e íconos */
     align-items: center;
     margin-top: auto;
+    font-family: 'Inria Serif', serif; 
 }
 .footer-icons {
     display: flex;
@@ -70,4 +72,5 @@ header a {
 }
 .section{
     margin-top: auto;
+    font-family: 'Inria Serif', serif; 
 }

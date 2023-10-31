@@ -15,6 +15,7 @@ header {
     display: flex;
     justify-content: flex-start; /* Alinea el logotipo a la izquierda del header */
     align-items: center; /* Centra verticalmente el contenido */
+    font-family: 'Inria Serif', serif; 
 }
 
 header a {
@@ -40,7 +41,7 @@ header a {
             text-align: center;
         }
 .nav-link {
-    font-family: Arial, sans-serif; /* Cambia "Arial, sans-serif" al tipo de letra que desees */
+    font-family: 'Inria Serif', serif;  /* Cambia "Arial, sans-serif" al tipo de letra que desees */
     font-size: 16px; /* Tamaño de fuente */
     font-weight: 600; /* Peso de fuente (opcional) */
 }
@@ -53,6 +54,7 @@ header a {
     justify-content: space-between; /* Separa el texto e íconos */
     align-items: center;
     margin-top: auto;
+    font-family: 'Inria Serif', serif; 
 }
 .footer-icons {
     display: flex;
@@ -74,6 +76,8 @@ header a {
     margin-top: auto;
 }
 .contact-section {
+    font-family: 'Inria Serif', serif; 
+
     display: flex;
     flex-direction: row; /* Cambia la dirección de los elementos a fila (horizontal) */
     align-items: center; /* Alinea los elementos al centro */
